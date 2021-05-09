@@ -1,5 +1,15 @@
 ### Hi there 👋
 
+This is my raw repo, thank you for your visiting.
+
+Perhapse you like to visit: [biomooc.com](https://www.biomooc.com)
+
+
+[![DawnEve's github stats](https://github-readme-stats.vercel.app/api?username=DawnEve&show_icons=true&include_all_commits=true)](https://github.com/DawnEve)
+
+
+
+
 <!--
 **DawnEve/DawnEve** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
