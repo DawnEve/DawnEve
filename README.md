@@ -1,7 +1,5 @@
 ### Hi there 👋
 
-This is my raw repo, thank you for your visiting.
-
 Perhapse you like to visit: [biomooc.com](https://www.biomooc.com)
 
 
