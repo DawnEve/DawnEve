@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>simonbaird.com</title>
+<!--
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://randomibis.com/coolclock/coolclock.js"></script>
+
+<script type="text/javascript">
+
+var colors = 'magenta orange red blue green teal'.split(/\s/).sort(function(){ return 0.5 - Math.random(); });
+
+$.extend(CoolClock.config.skins,{
+  fooskin: {
+    hourHand:         { lineWidth: 80, startAt: -15, endAt: 35,  color: colors[0], alpha: 0.5 },
+    minuteHand:       { lineWidth: 80, startAt: -15, endAt: 65,  color: colors[1], alpha: 0.5 },
+    secondDecoration: { lineWidth: 1,  startAt: 40,  radius: 40, color: "#fff", fillColor: colors[2], alpha: 0.5 }
+  }
+});
+
+$(function(){
+  var link = $(this).attr('href');
+  $('.links a').hover(
+    function(){
+      var new_html =
+        '<p class="name">' + $(this).text() + '</p>' + 
+        '<p class="blurb">' + $(this).attr('title') + '</p>' + 
+        '<p class="url">' + $(this).attr('href').replace(/^http:\/\//,'') + '</p>' +
+        '';
+      $('#showlink').css('visibility', 'visible').stop().html(new_html).fadeTo('fast', 1.0);
+    },
+    function(){
+      $('#showlink').stop().fadeTo('slow',0.0);
+    }
+  );
+});
+
+</script>
+-->
+<style>
+
+body {
+  font-family:sans-serif;
+  font-size:110%;
+  padding:2em 3em 4em;
+  background-color:#333;
+  /* background-image:url(/cv/bg.png); */
+}
+
+.wrapper {
+  background-color:white;
+  padding:0;
+  padding-bottom:0.5em;
+  width:530px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius:    5px;
+  border-radius:         5px;
+
+  -webkit-box-shadow: rgba(0,0,0,0.9) 2px 2px 8px;
+  -moz-box-shadow:    rgba(0,0,0,0.9) 2px 2px 8px;
+  box-shadow:         rgba(0,0,0,0.9) 2px 2px 8px;
+
+  /*
+  -webkit-transform: rotate(-0.5deg);
+  -moz-transform:    rotate(-0.5deg);
+  transform:         rotate(-0.5deg);
+  */
+
+}
+
+.message {
+  padding-top:1.5em;
+  padding-right:3em;
+  text-align:right;
+}
+
+.title {
+  font-size:100%;
+  margin-bottom:2em;
+  color:#ddd;
+  font-weight:bold;
+  padding-right:0.5em;
+}
+
+.links {
+  font-size:80%;
+  line-height:200%;
+  color:#ccc;
+}
+
+#showlink {
+  padding:0.5em 0 1em 0;
+  z-index:2000;
+}
+
+#showlink p {
+  margin:0;
+  padding:0;
+}
+#showlink .name {
+  color:#fff;
+  font-weight:bold;
+  text-shadow: #888 2px 2px 4px;
+  font-size:180%;
+  padding-bottom:0.1em;
+  padding-top:0.5em;
+}
+#showlink .url {
+  color:#bbb;
+  font-size:50%;
+}
+
+#showlink .blurb {
+  color:#666;
+  font-size:70%;
+}
+
+small {
+  font-size:80%;
+}
+
+a {
+	color: #000;
+  text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+</style>
+
+</head>
+<body>
+<div class="wrapper">
+  <div class="message">
+    <p class="title">George Wang</p>
+    <div style="visibility:hidden" id="showlink">
+      <p class='name'>&nbsp;</p>
+      <p class='blurb'>&nbsp;</p>
+      <p class='url'>&nbsp;</p>
+    </div>
+	
+    <div class="links">
+      code: &nbsp;
+      <a title="my code on Github" href="http://github.com/DawnEve/learngit">github</a> &bull;
+      <a title="programming blog, mostly R, Shell, Python and JavaScript" href="http://www.biomooc.com">Biomooc.com</a> &bull;
+      <a title="生信工具包 bioToolKit" href="http://tool.biomooc.com">bioToolKit</a> &bull;
+      
+	  
+	  <br/>
+      projects: &nbsp;
+      <a title="生信知识百科全书" href="http://github.com/DawnEve/txtBlog.py">txtBlog.py</a> &bull;
+      <a title="英语学习" href="http://ielts.biomooc.com/">英语</a> &bull;
+      <a title="文献阅读笔记，based on Vue3" href="http://note.biomooc.com">StackNote</a>
+	  
+      <br/>
+      <a title="局域网文件共享" href="http://github.com/DawnEve/webPan.py">webPan.py</a> &bull;
+      <a title="局域网视频播放器" href="http://github.com/DawnEve/mp4Player">mp4Player</a> &bull;
+      
+	  
+	  
+	  <br/>
+      etc: &nbsp;
+      <a title="JS学习" href="http://jsLecture.biomooc.com/">JS</a> &bull;
+      <a title="机器学习" href="http://ML.biomooc.com/">机器学习</a> &bull;
+      <a title="单细胞" href="https://github.com/DawnEve/scRNAseqCode">单细胞</a>
+
+    </div>
+  </div>
+  <canvas style="z-index:100;position:absolute;top:0px;left:0px" class="CoolClock:fooskin:150"></canvas>
+  <br style="clear:both" />
+</div>
+</body>
+</html>
